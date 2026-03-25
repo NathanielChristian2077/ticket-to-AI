@@ -14,7 +14,6 @@ export default function App() {
         <section className="panel">
           <h2>Algoritmo</h2>
           <select>
-            <option>A*</option>
             <option>Malha Completa</option>
             <option>Kruskal</option>
             <option>AG</option>
@@ -37,7 +36,7 @@ export default function App() {
             </select>
           </label>
 
-          <button>Run</button>
+          <button>Run A*</button>
         </section>
 
         <section className="panel">
