@@ -1,15 +1,12 @@
-import { useState } from 'react'
 import './index.css'
+import MapGraph from './components/MapGraph'
 
 export default function App() {
-  const [leftPanelOpen, setLeftPanelOpen] = useState(true)
-  const [rightPanelOpen, setRightPanelOpen] = useState(true)
-
-  return(
+  return (
     <div className="app">
       <aside className="sidebar">
         <h1>Projeto Ferrovias A*</h1>
-        <p>Feerovias e rotas entre capitais</p>
+        <p>Ferrovias e rotas entre capitais</p>
 
         <section className="panel">
           <h2>Algoritmo</h2>
@@ -19,9 +16,10 @@ export default function App() {
             <option>AG</option>
           </select>
         </section>
-        
+
         <section className="panel">
           <h2>Parâmetros</h2>
+
           <label>
             Origem
             <select>
@@ -49,7 +47,7 @@ export default function App() {
 
       <main className="main">
         <div className="map-area">
-          <p>Mapa</p>
+          <MapGraph />
         </div>
 
         <div className="details-panel">
@@ -58,5 +56,5 @@ export default function App() {
         </div>
       </main>
     </div>
-   )
+  )
 }
